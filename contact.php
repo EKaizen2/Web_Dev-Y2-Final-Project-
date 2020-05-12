@@ -330,7 +330,7 @@ Copyright &copy;<script>document.write(new Date().getFullYear());</script> All r
 
 
                 //Code to check if the account already exists - using the email
-                $sql = $conn->prepare("SELECT ID FROM User WHERE email = '$email'");
+                $sql = $conn->prepare("SELECT ID FROM user WHERE email = '$email'");
                 $sql->execute();
                 $results = $sql->fetchAll();
                 $account = sizeof($results); 
@@ -343,7 +343,7 @@ Copyright &copy;<script>document.write(new Date().getFullYear());</script> All r
 
                 else{
 
-                $sql =  $conn->prepare("INSERT INTO User (ID, fname, lname, email, passwd) VALUES (?,?,?,?,?)");
+                $sql =  $conn->prepare("INSERT INTO user (ID, fname, lname, email, passwd) VALUES (?,?,?,?,?)");
                 $result = $sql->execute(array($ID, $fname, $lname, $email, $passwd));
                 echo "<script type = 'text/javascript'>window.alert('Account Has Been Created Successfully')</script>";
                 echo "<script type = 'text/javascript'> window.location = '#login_form'</script>";
@@ -363,7 +363,7 @@ Copyright &copy;<script>document.write(new Date().getFullYear());</script> All r
                 $email = $_POST['login_email'];
                 $passwd = $_POST['login_password'];
 
-                $sql1 = $conn->prepare("SELECT ID FROM User WHERE email = '$email' AND passwd = '$passwd'");
+                $sql1 = $conn->prepare("SELECT ID FROM user WHERE email = '$email' AND passwd = '$passwd'");
                 $sql1->execute();
                 $results1 = $sql1->fetchAll();
                 $logs = sizeof($results1); 
