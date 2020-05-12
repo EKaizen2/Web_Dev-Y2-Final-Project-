@@ -397,7 +397,7 @@ Copyright &copy;<script>document.write(new Date().getFullYear());</script> All r
 
                     else{
 
-                $sql1 = $conn->prepare("SELECT ID FROM User WHERE email = '$email' AND passwd = '$passwd'");
+                $sql1 = $conn->prepare("SELECT ID FROM user WHERE email = '$email' AND passwd = '$passwd'");
                 $sql1->execute();
                 $results1 = $sql1->fetchAll();
                 $logs = sizeof($results1); 
