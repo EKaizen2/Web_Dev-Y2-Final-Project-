@@ -93,7 +93,8 @@
                             <div class="classynav">
                                 <ul>
                                     <li><a href="index.php">Log Out</a></li>
-
+                                    <li><a href="#upload">Upload</a></li>
+                                    
                                 <!-- Search Form  -->
                                 <li><div id="search-wrapper">
                                     <form action = 'search_results.php?'>
@@ -102,6 +103,9 @@
                                         <button type = 'Submit' name = 'searcher' value ='yes'>Search</button>                                        
                                     </form>
                                 </div></li>
+
+                                
+                            </div>
                             <!-- Nav End -->
                         </div>
                     </nav>
@@ -117,7 +121,7 @@
             <div class="row h-100 align-items-center">
                 <div class="col-12">
                     <div class="breadcumb-content text-center">
-                        <h2>Welcome Scholar</h2>
+                        <h2>Welcome Proffessors</h2>
                     </div>
                 </div>
             </div>
@@ -215,7 +219,72 @@
         </div>
     </div>
     <!-- ##### Cool Facts Area End ##### -->
+    <!-- ##### Contact Area Start ##### -->
+    <section id="upload" class="contact-area section-padding-100">
+        <div class="container">
+            <div class="row justify-content-center">
+                <!-- Contact Form Area -->
+                <div class="col-12 col-md-10 col-lg-9">
+                    <div class="contact-form">
+                        <h5>Upload new content for students across the world</h5>
+                        <!-- Contact Form -->
+                        <form action="#" method="post">
+                            <div class="row">
+                                <div class="col-12 col-md-6">
+                                    <div class="group">
+                                        <input type="text" name="title" id="title" required>
+                                        <span class="highlight"></span>
+                                        <span class="bar"></span>
+                                        <label>Title</label>
+                                    </div>
+                                </div>
+                                <div class="col-12 col-md-6">
+                                    <div class="group">
+                                        <input type="text" name="author" id="author" required>
+                                        <span class="highlight"></span>
+                                        <span class="bar"></span>
+                                        <label>Author</label>
+                                    </div>
+                                </div>
+                                <div class="col-12 col-md-6">
+                                    <div class="group">
+                                        <span class="highlight"></span>
+                                        <span class="bar"></span>
+                                        <!-- <label>Category</label> -->
+                                            <select name="category" style='width:100%; height:35px;border:none;font-size:13px;
+                                            font-weight:300;font-family:"Roboto"'>
+                                                
+                                                    <option value=0><i>Choose Category</i></option>
+                                                    <option value='science'>Science</option>
+                                                    <option value='math'>Mathematics</option>
+                                                    <option value='history'>History</option>
+                                                    <option value='african'>African</option>
+                                                    <option value='social'>Social</option>
+                                               
+                                            </select>
+                                    </div>
+                                </div>
+                                <div class="col-12">
+                                    <div class="group">
+                                        <textarea name="descrp" id="descrp" required></textarea>
+                                        <span class="highlight"></span>
+                                        <span class="bar"></span>
+                                        <label>Description</label>
+                                    </div>
+                                </div>
+                                <div class="col-12">
+                                    <button type="submit" name = 'upload' class="btn original-btn">Upload</button>
+                                </div>
+                            </div>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- ##### Contact Area End ##### -->
 
+    <!-- ##### Blog Wrapper Start ##### -->
     <?php
         include 'commons.php';
 
@@ -306,8 +375,7 @@
     </div>
     ";}
     ?>
-         <!-- ##### Blog Wrapper End ##### -->
-
+    <!-- ##### Blog Wrapper End ##### -->
 
     <!-- ##### Footer Area Start ##### -->
     <footer class="footer-area text-center">
@@ -346,9 +414,9 @@
 
                     <!-- Footer Social Area -->
                     <div class="footer-social-area mt-30">
-                    <a href="http://www.facebook.com" data-toggle="tooltip" data-placement="bottom" title="Facebook"><i class="fa fa-facebook" aria-hidden="true"></i></a>
-                            <a href="http://www.twitter.com" data-toggle="tooltip" data-placement="bottom" title="Twitter"><i class="fa fa-twitter" aria-hidden="true"></i></a>
-                            <a href="http://www.linkedin.com" data-toggle="tooltip" data-placement="bottom" title="Linkedin"><i class="fa fa-linkedin" aria-hidden="true"></i></a>
+                        <a href="http://www.facebook.com" data-toggle="tooltip" data-placement="bottom" title="Facebook"><i class="fa fa-facebook" aria-hidden="true"></i></a>
+                        <a href="http://www.twitter.com" data-toggle="tooltip" data-placement="bottom" title="Twitter"><i class="fa fa-twitter" aria-hidden="true"></i></a>
+                        <a href="http://www.linkedin.com" data-toggle="tooltip" data-placement="bottom" title="Linkedin"><i class="fa fa-linkedin" aria-hidden="true"></i></a>
                     </div>
                 </div>
             </div>
@@ -371,6 +439,55 @@ Copyright &copy;<script>document.write(new Date().getFullYear());</script> All r
     <script src="js/plugins.js"></script>
     <!-- Active js -->
     <script src="js/active.js"></script>
+
+
+    <?php
+        include "commons.php";
+        
+        //this inserts the information after accessing them into the customer table so that the user becomes a registered customer who can check out products
+        $ID = "";
+        $title = "";
+        $category = "";
+        $descrp = "";
+        $author = "";
+
+        if(isset($_POST['upload']))
+            {	
+                $ID = "";
+                $title = $_POST['title'];
+                $category = $_POST['category'];
+                $descrp = $_POST['descrp'];
+                $author = $_POST['author'];
+
+                // define variables and set to empty values
+                //PHP validation for the input fields in the form
+
+
+                //Code to check if the account already exists - using the email
+                $sql = $conn->prepare("SELECT ID FROM books WHERE title = '$title'");
+                $sql->execute();
+                $results = $sql->fetchAll();
+                $account = sizeof($results); 
+                
+                if($account > 0){
+                echo "<script type = 'text/javascript'>window.alert('Book already available')</script>";
+                //echo "<script type = 'text/javascript'> window.location = '#login_form'</script>";
+
+                }
+
+                else{
+
+                $sql =  $conn->prepare("INSERT INTO books (ID, title, category, descrp, author) VALUES (?,?,?,?,?)");
+                $result = $sql->execute(array($ID, $title, $category, $descrp, $author));
+                echo "<script type = 'text/javascript'>window.alert('Book posted')</script>";
+                echo "<script type = 'text/javascript'> window.location = 'profaccounts.php'</script>";
+
+            }
+
+                $conn = null;
+            }
+
+    ?>
 
 </body>
 

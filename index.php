@@ -28,14 +28,14 @@
     </div>
 
     <!-- Subscribe Modal -->
-    <div class="subscribe-newsletter-area">
+    <div class="subscribe-newsletter-area" >
         <div class="modal fade" id="subsModal" tabindex="-1" role="dialog" aria-labelledby="subsModal" aria-hidden="true">
             <div class="modal-dialog modal-dialog-centered" role="document">
                 <div class="modal-content">
                     <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
                     <div class="modal-body">
                         <h5 class="title">Create an account at Scholarly</h5>
-                        <form action="#login_form" class="newsletterForm" method="post" name = 'signup_form'>
+                        <form id = 'create_account' class="newsletterForm" method="post" name = 'signup_form'>
                             <input type="name" name="fname" id="subscribesForm2" placeholder="First name">
                             <input type="name" name="lname" id="subscribesForm2" placeholder="Last name">
                             <input type="email" name="email" id="subscribesForm2" placeholder="Your e-mail here">
@@ -56,7 +56,7 @@
                     <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
                     <div class="modal-body">
                         <h5 class="title">Login at Scholarly</h5>
-                        <form action="account.php" class="newsletterForm" method="post" name = 'login_form'>
+                        <form class="newsletterForm" method="post" name = 'login_form'>
                             <input type="email" name="login_email" placeholder="Your e-mail here">
                             <input type="password" name="login_password" placeholder="Input password">
                             <button type="submit" name = 'login_account' class="btn original-btn">Login</button>
@@ -91,12 +91,9 @@
                     <!-- Top Social Area -->
                     <div class="col-12 col-sm-4">
                         <div class="top-social-area">
-                            <a href="#" data-toggle="tooltip" data-placement="bottom" title="Pinterest"><i class="fa fa-pinterest" aria-hidden="true"></i></a>
-                            <a href="#" data-toggle="tooltip" data-placement="bottom" title="Facebook"><i class="fa fa-facebook" aria-hidden="true"></i></a>
-                            <a href="#" data-toggle="tooltip" data-placement="bottom" title="Twitter"><i class="fa fa-twitter" aria-hidden="true"></i></a>
-                            <a href="#" data-toggle="tooltip" data-placement="bottom" title="Dribbble"><i class="fa fa-dribbble" aria-hidden="true"></i></a>
-                            <a href="#" data-toggle="tooltip" data-placement="bottom" title="Behance"><i class="fa fa-behance" aria-hidden="true"></i></a>
-                            <a href="#" data-toggle="tooltip" data-placement="bottom" title="Linkedin"><i class="fa fa-linkedin" aria-hidden="true"></i></a>
+                            <a href="http://www.facebook.com" data-toggle="tooltip" data-placement="bottom" title="Facebook"><i class="fa fa-facebook" aria-hidden="true"></i></a>
+                            <a href="http://www.twitter.com" data-toggle="tooltip" data-placement="bottom" title="Twitter"><i class="fa fa-twitter" aria-hidden="true"></i></a>
+                            <a href="http://www.linkedin.com" data-toggle="tooltip" data-placement="bottom" title="Linkedin"><i class="fa fa-linkedin" aria-hidden="true"></i></a>
                         </div>
                     </div>
                 </div>
@@ -108,7 +105,7 @@
             <div class="container h-100">
                 <div class="row h-100 align-items-center">
                     <div class="col-12">
-                        <a href="index.html" class="original-logo"><img src="img/core-img/logo.png" alt=""></a>
+                        <a href="index.php" class="original-logo"><img src="img/core-img/logo.png" alt=""></a>
                     </div>
                 </div>
             </div>
@@ -143,20 +140,7 @@
                             <div class="classynav">
                                 <ul>
                                     <li><a href="index.php">Home</a></li>
-                                    <li><a href="#">Pages</a>
-                                        <ul class="dropdown">
-                                            <li><a href="index.php">Home</a></li>
-                                            <li><a href="contact.php">Contact</a></li>
-                                        </ul>
-                                    </li>
-                                <div id="search-wrapper">
-                                    <form action="#">
-                                        <input type="text" id="search" placeholder="Search something...">
-                                        <div id="close-icon"></div>
-                                        <input class="d-none" type="submit" value="">
-                                    </form>
-                                </div>
-                            </div>
+                                    <li><a href="contact.php">Contact</a></li></ul>
                             <!-- Nav End -->
                         </div>
                     </nav>
@@ -233,14 +217,14 @@
                             <a href="#" class="post-tag">Scholarly</a>
                             <h4><a href="#" class="post-headline">Welcome to Scholarly</a></h4>
                             <p>Scholarly is a page designed to provide you with the best and reliable sourced articles. You are welcomed to stay</p>
-                            <a href="#" class="btn original-btn">Read More</a>
+                            <a href="#login_form" class="btn original-btn">Read More</a>
                         </div>
                     </div>
                 </div>
                 <!-- Single Blog Area -->
                 <div class="col-12 col-md-6 col-lg-4">
                     <div class="single-catagory-area clearfix mb-100">
-                        <img src="C:\Users\EPHRAIM_KAIZEN\Documents\HTML + CSS Coding\Personal Work\img\blog-img\ph1.jpg" alt="">
+                        <img src="img\blog-img\ph1.jpg">
                         <!-- Catagory Title -->
                         <div class="catagory-title">
                             <a href="#">Recent Articles</a>
@@ -250,7 +234,7 @@
                 <!-- Single Blog Area -->
                 <div class="col-12 col-md-6 col-lg-4">
                     <div class="single-catagory-area clearfix mb-100">
-                        <img src="C:\Users\EPHRAIM_KAIZEN\Documents\HTML + CSS Coding\Personal Work\img\blog-img\getty_673965992_20001333183785248481_392637.jpg" alt="">
+                        <img src="img\blog-img\ph3.jpg">
                         <!-- Catagory Title -->
                         <div class="catagory-title">
                             <a href="#">Most read</a>
@@ -305,8 +289,8 @@
                                 <!-- Nav Start -->
                                 <div class="classynav" style="position: inherit;">
                                     <ul>
-                                        <li><a href="#">Home</a></li>
-                                        <li><a href="#">Contact</a></li>
+                                    <li><a href="index.php">Home</a></li>
+                                    <li><a href="contact.php">Contact</a></li>
                                     </ul>
                                 </div>
                                 <!-- Nav End -->
@@ -316,12 +300,9 @@
                     
                     <!-- Footer Social Area -->
                     <div class="footer-social-area mt-30">
-                        <a href="#" data-toggle="tooltip" data-placement="top" title="Pinterest"><i class="fa fa-pinterest" aria-hidden="true"></i></a>
-                        <a href="#" data-toggle="tooltip" data-placement="top" title="Facebook"><i class="fa fa-facebook" aria-hidden="true"></i></a>
-                        <a href="#" data-toggle="tooltip" data-placement="top" title="Twitter"><i class="fa fa-twitter" aria-hidden="true"></i></a>
-                        <a href="#" data-toggle="tooltip" data-placement="top" title="Dribbble"><i class="fa fa-dribbble" aria-hidden="true"></i></a>
-                        <a href="#" data-toggle="tooltip" data-placement="top" title="Behance"><i class="fa fa-behance" aria-hidden="true"></i></a>
-                        <a href="#" data-toggle="tooltip" data-placement="top" title="Linkedin"><i class="fa fa-linkedin" aria-hidden="true"></i></a>
+                    <a href="http://www.facebook.com" data-toggle="tooltip" data-placement="bottom" title="Facebook"><i class="fa fa-facebook" aria-hidden="true"></i></a>
+                            <a href="http://www.twitter.com" data-toggle="tooltip" data-placement="bottom" title="Twitter"><i class="fa fa-twitter" aria-hidden="true"></i></a>
+                            <a href="http://www.linkedin.com" data-toggle="tooltip" data-placement="bottom" title="Linkedin"><i class="fa fa-linkedin" aria-hidden="true"></i></a>
                     </div>
                 </div>
             </div>
@@ -389,27 +370,42 @@ Copyright &copy;<script>document.write(new Date().getFullYear());</script> All r
 
             }
 
-                $conn = null;
+                //$conn = null;
             }
 
     ?>
 
     <?php
-            include "commons.php";
+            //include "commons.php";
 
             if(isset($_POST['login_account']))
             {
                 $email = $_POST['login_email'];
                 $passwd = $_POST['login_password'];
 
+                $sql0 = $conn->prepare("SELECT ID FROM adm WHERE email = '$email' AND passwd = '$passwd'");
+                $sql0->execute();
+                $admincheck = $sql0->fetchAll();
+                $logs0 = sizeof($admincheck); 
+
+                if($logs0 >= 1){
+                    echo "Hello World";
+                    echo "<script type = 'text/javascript'> window.alert('Admin log in successful')</script>";
+                    echo "<script type = 'text/javascript'> window.location = 'profaccounts.php'</script>";
+    
+                    }
+
+                    else{
+
                 $sql1 = $conn->prepare("SELECT ID FROM User WHERE email = '$email' AND passwd = '$passwd'");
                 $sql1->execute();
                 $results1 = $sql1->fetchAll();
                 $logs = sizeof($results1); 
+                echo $logs;
                 
                 if($logs < 1){
                 echo "<script type = 'text/javascript'> window.alert('Account does not exist')</script>";
-                echo "<script type = 'text/javascript'> window.location = 'create_account.php'</script>";
+                echo "<script type = 'text/javascript'> window.location = '#create_account'</script>";
 
                 }
                 else{
@@ -422,7 +418,11 @@ Copyright &copy;<script>document.write(new Date().getFullYear());</script> All r
                 $conn = null;
 
             }
+            }
+
     ?>
 
 </body>
+
+
 </html>
