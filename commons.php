@@ -1,10 +1,17 @@
 <?php
 //general code to manage a current session, initialize the database connection and calculate information needed for the breadcrumbs
 	//session_start();
-	$host = 'localhost';
-	$dbname = 'project_db';
-	$username = 'root';
-	$password = '';
+	// Local connections
+	// $host = 'localhost';
+	// $dbname = 'project_db';
+	// $username = 'root';
+	// $password = '';
+
+//   Online connections
+	$host = 'remotemysql.com';
+	$dbname = 'gvcR0vlnAu';
+	$username = 'gvcR0vlnAu';
+	$password = 'nrWQaKAPhN';
 
 	try
 	{
