@@ -15,7 +15,7 @@
 
 	try
 	{
-		$conn = new PDO("mysql:host=$host;dbname=$dbname",$username,$password);
+		$conn = new PDO(mysql:$host;$dbname,$username,$password);
 
 	}
 	catch (PDOException $pe)
