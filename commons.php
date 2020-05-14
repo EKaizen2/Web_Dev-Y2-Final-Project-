@@ -9,9 +9,9 @@
 
 //   Online connections
 	$host = 'remotemysql.com';
-	$dbname = 'gvcR0vlnAu';
-	$username = 'gvcR0vlnAu';
-	$password = 'nrWQaKAPhN';
+	$dbname = 'Vwl5ASXF6Z';
+	$username = 'Vwl5ASXF6Z';
+	$password = 'h6oE19YFRp';
 
 	try
 	{
