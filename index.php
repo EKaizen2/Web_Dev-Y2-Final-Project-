@@ -9,7 +9,7 @@
     <!-- The above 4 meta tags *must* come first in the head; any other head content must come *after* these tags -->
 
     <!-- Title -->
-    <title>SCHOLARLY - Reliable sourses only</title>
+    <title>SCHOLARLY - Reliable sourses For Africans</title>
 
     <!-- Favicon -->
     <link rel="icon" href="img/core-img/logo.png">
@@ -163,7 +163,7 @@
                                 <div class="post-tag">
                                     <a href="#" data-animation="fadeInUp">Scholarly</a>
                                 </div>
-                                <h2 data-animation="fadeInUp" data-delay="250ms"><a href="single-post.html">The best proffesors in the world are here for you</a></h2>
+                                <h2 data-animation="fadeInUp" data-delay="250ms"><a href="single-post.html">The best opportunities in the world are here for you</a></h2>
                             </div>
                         </div>
                     </div>
@@ -178,7 +178,7 @@
                                 <div class="post-tag">
                                     <a href="#" data-animation="fadeInUp">Scholarly</a>
                                 </div>
-                                <h2 data-animation="fadeInUp" data-delay="250ms"><a href="single-post.html">The best proffesors in the world are here for you</a></h2>
+                                <h2 data-animation="fadeInUp" data-delay="250ms"><a href="single-post.html">The best opportunities in the world are here for you</a></h2>
                             </div>
                         </div>
                     </div>
@@ -193,7 +193,7 @@
                                 <div class="post-tag">
                                     <a href="#" data-animation="fadeInUp">Scholarly</a>
                                 </div>
-                                <h2 data-animation="fadeInUp" data-delay="250ms"><a href="single-post.html">The best proffesors in the world are here for you</a></h2>
+                                <h2 data-animation="fadeInUp" data-delay="250ms"><a href="single-post.html">The best opportunities in the world are here for you</a></h2>
                             </div>
                         </div>
                     </div>
@@ -216,7 +216,7 @@
                             <div class="line"></div>
                             <a href="#" class="post-tag">Scholarly</a>
                             <h4><a href="#" class="post-headline">Welcome to Scholarly</a></h4>
-                            <p>Scholarly is a page designed to provide you with the best and reliable sourced articles. You are welcomed to stay</p>
+                            <p>Scholarly is a page designed to broadcast opportunities the African youth can leverage. Tell A Friend To Tell A Friend</p>
                             <a href="#login_form" class="btn original-btn">Read More</a>
                         </div>
                     </div>
