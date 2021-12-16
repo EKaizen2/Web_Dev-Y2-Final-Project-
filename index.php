@@ -155,7 +155,7 @@
         <!-- Hero Slides Area -->
         <div class="hero-slides owl-carousel" height = 90px;>
             <!-- Single Slide -->
-            <div class="single-hero-slide bg-img" style="background-image: url(img/bg-img/ph4.jpg);">
+            <div class="single-hero-slide bg-img" style="background-image: url(img/bg-img/af1.jpg);">
                 <div class="container h-100">
                     <div class="row h-100 align-items-center">
                         <div class="col-12">
@@ -170,7 +170,7 @@
                 </div>
             </div>
             <!-- Single Slide -->
-            <div class="single-hero-slide bg-img" style="background-image: url(img/bg-img/ph1.jpg);">
+            <div class="single-hero-slide bg-img" style="background-image: url(img/bg-img/af2.jpg);">
                 <div class="container h-100">
                     <div class="row h-100 align-items-center">
                         <div class="col-12">
@@ -185,7 +185,7 @@
                 </div>
             </div>
               <!-- Single Slide -->
-            <div class="single-hero-slide bg-img" style="background-image: url(img/bg-img/ph5.jpg);">
+            <div class="single-hero-slide bg-img" style="background-image: url(img/bg-img/af3.jpg);">
                 <div class="container h-100">
                     <div class="row h-100 align-items-center">
                         <div class="col-12">
