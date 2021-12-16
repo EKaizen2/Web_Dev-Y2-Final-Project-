@@ -80,9 +80,9 @@
                         <div class="breaking-news-area">
                             <div id="breakingNewsTicker" class="ticker">
                                 <ul>
-                                    <li><a href="#">Hello World!</a></li>
+                                    <li><a href="#">Hello Africa!</a></li>
                                     <li><a href="#">Hello Profesors!</a></li>
-                                    <li><a href="#">Hello Scholars!</a></li>
+                                    <li><a href="#">Hello African Youth!</a></li>
                                     <li><a href="#">Hello everyone!</a></li>
                                 </ul>
                             </div>
@@ -155,7 +155,7 @@
         <!-- Hero Slides Area -->
         <div class="hero-slides owl-carousel" height = 90px;>
             <!-- Single Slide -->
-            <div class="single-hero-slide bg-img" style="background-image: url(img/bg-img/ph1.jpg);">
+            <div class="single-hero-slide bg-img" style="background-image: url(img/bg-img/ph4.jpg);">
                 <div class="container h-100">
                     <div class="row h-100 align-items-center">
                         <div class="col-12">
@@ -170,7 +170,7 @@
                 </div>
             </div>
             <!-- Single Slide -->
-            <div class="single-hero-slide bg-img" style="background-image: url(img/bg-img/ph4.jpg);">
+            <div class="single-hero-slide bg-img" style="background-image: url(img/bg-img/ph1.jpg);">
                 <div class="container h-100">
                     <div class="row h-100 align-items-center">
                         <div class="col-12">
